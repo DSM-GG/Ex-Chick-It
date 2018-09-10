@@ -12,7 +12,7 @@ public class Player : MonoBehaviour {
     [SerializeField]
     private float speed;
 
-    private bool bControl = true;
+    private static bool bControl = true;
 
     private void Update() {
         if (gameObject.name != "Player") return;
@@ -32,7 +32,6 @@ public class Player : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D col) {
         if (col.CompareTag("Escape")) {
-            Debug.Log(string.Format("{0} is win!", gameObject.name));
             bControl = false;
             winScreen.SetActive(true);
         }
@@ -44,7 +43,8 @@ public class Player : MonoBehaviour {
 
     public void Death() {
         bControl = false;
-        loseScreen.SetActive(true);
+        loseScreen.SetActive(gameObject.name == "Player");
+        winScreen.SetActive(gameObject.name != "Player");
     }
 
     private IEnumerator KnockBack(Vector3 destPos) {

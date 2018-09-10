@@ -561,6 +561,16 @@ Prefab:
       propertyPath: joyStick
       value: 
       objectReference: {fileID: 1685541997}
+    - target: {fileID: 114831634121184976, guid: 7544964bc4d0ce64fb5ebbc9fddb50b6,
+        type: 2}
+      propertyPath: winScreen
+      value: 
+      objectReference: {fileID: 1690215514}
+    - target: {fileID: 114831634121184976, guid: 7544964bc4d0ce64fb5ebbc9fddb50b6,
+        type: 2}
+      propertyPath: loseScreen
+      value: 
+      objectReference: {fileID: 270734949}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7544964bc4d0ce64fb5ebbc9fddb50b6, type: 2}
   m_IsPrefabAsset: 0
