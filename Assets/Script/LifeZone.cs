@@ -28,13 +28,17 @@ public class LifeZone : MonoBehaviour {
                 Destroy(col.transform.GetChild(0).gameObject);
         }
 
+        else if (col.CompareTag("Escape")) {
+            Debug.Log("ddd");
+            Destroy(col.gameObject);
+        }
     }
 
     private IEnumerator LimitCount() {
         for (int count = 0; count < status.Length; count++) {
             yield return new WaitForSeconds(status[nowStage].waitSec);
 
-            var destPos = (Random.insideUnitCircle * transform.localScale * 0.05f) + (Vector2)transform.position;
+            var destPos = (Random.insideUnitCircle * status[nowStage].scale * 0.03f) + (Vector2)transform.position;
             var destScale = Vector2.one * status[nowStage].scale;
 
             var originPos = transform.position;
