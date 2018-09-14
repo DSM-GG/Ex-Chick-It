@@ -17,7 +17,11 @@ TagManager:
   - 
   - Player
   - Destroy Wall
+<<<<<<< HEAD
   - 
+=======
+  - Life Zone
+>>>>>>> master
   - 
   - 
   - 

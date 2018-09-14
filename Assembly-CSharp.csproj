@@ -67,6 +67,10 @@
     <Compile Include="Assets\Script\Escape.cs" />
     <Compile Include="Assets\Script\JoyStick.cs" />
     <Compile Include="Assets\Script\LifeZone.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Script\MiniMapMarker.cs" />
+>>>>>>> master
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\PlayerAttack.cs" />
     <None Include="Assets\Asset\Sprite Pack\Tap and Fly\Readme.txt" />
