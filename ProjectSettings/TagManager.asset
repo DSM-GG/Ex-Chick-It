@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Floor
+  - Destroy Wall
+  - Escape
   layers:
   - Default
   - TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - floor
-  - 
+  - Player
+  - Destroy Wall
   - 
   - 
   - 
